@@ -4,6 +4,9 @@ import { Button } from "@/components/ui/button"
 import { MobileNav } from "@/components/mobile-nav"
 import Link from "next/link"
 import "./globals.css"
+import { Inter } from 'next/font/google';
+
+const inter = Inter({ subsets: ['latin'] });
 
 export default function RootLayout({
   children,
@@ -11,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={inter.className}>
       <body>
         <div className="flex min-h-screen flex-col">
           <header className="sticky top-0 z-50 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
