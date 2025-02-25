@@ -37,20 +37,26 @@ export default function FeaturesPage() {
       </div>
 
       <Tabs defaultValue="events" className="mx-auto max-w-4xl mt-12">
-        <TabsList className="grid w-full grid-cols-1 sm:grid-cols-3 gap-2">
-          <TabsTrigger value="events" className="text-sm sm:text-base">Event Management</TabsTrigger>
-          <TabsTrigger value="gamification" className="text-sm sm:text-base">Gamification</TabsTrigger>
-          <TabsTrigger value="community" className="text-sm sm:text-base">Community</TabsTrigger>
+        <TabsList className="flex flex-wrap justify-center gap-2 md:grid md:grid-cols-3 md:gap-0">
+          <TabsTrigger value="events" className="flex-1 min-w-[120px]">
+            Event Management
+          </TabsTrigger>
+          <TabsTrigger value="gamification" className="flex-1 min-w-[120px]">
+            Gamification
+          </TabsTrigger>
+          <TabsTrigger value="community" className="flex-1 min-w-[120px]">
+            Community
+          </TabsTrigger>
         </TabsList>
         <TabsContent value="events" className="mt-6">
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2">
             <Card>
               <CardHeader>
                 <Calendar className="h-10 w-10 text-blue-600" />
                 <CardTitle>Smart Event Planning</CardTitle>
                 <CardDescription>
-                  Create and manage events with AI-powered route suggestions, intelligent pace groups, and
-                  predictive weather forecasts.
+                  Create and manage events with AI-powered route suggestions, intelligent pace groups, and predictive
+                  weather forecasts.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -85,7 +91,7 @@ export default function FeaturesPage() {
           </div>
         </TabsContent>
         <TabsContent value="gamification" className="mt-6">
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2">
             <Card>
               <CardHeader>
                 <Trophy className="h-10 w-10 text-blue-600" />
@@ -127,13 +133,13 @@ export default function FeaturesPage() {
           </div>
         </TabsContent>
         <TabsContent value="community" className="mt-6">
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2">
             <Card>
               <CardHeader>
                 <MessageSquare className="h-10 w-10 text-blue-600" />
                 <CardTitle>Club Forums</CardTitle>
                 <CardDescription>
-                  Engage in discussions, share tips, and connect with fellow athletes in your club.
+                  Engage in discussions with AI-powered topic suggestions and connect with fellow athletes in your club.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -150,8 +156,10 @@ export default function FeaturesPage() {
               <CardHeader>
                 <Heart className="h-10 w-10 text-blue-600" />
                 <CardTitle>Support Network</CardTitle>
-                <CardDescription>Find training partners through AI matchmaking that connects you with compatible athletes based on
-                  goals and schedules.</CardDescription>
+                <CardDescription>
+                  Find training partners through AI matchmaking that connects you with compatible athletes based on
+                  goals and schedules.
+                </CardDescription>
               </CardHeader>
             </Card>
             <Card>
