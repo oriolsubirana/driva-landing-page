@@ -1,6 +1,7 @@
 import type React from "react"
 import { Logo } from "@/components/logo"
 import { Button } from "@/components/ui/button"
+import { MobileNav } from "@/components/mobile-nav"
 import Link from "next/link"
 import "./globals.css"
 
@@ -14,7 +15,7 @@ export default function RootLayout({
       <body>
         <div className="flex min-h-screen flex-col">
           <header className="sticky top-0 z-50 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-            <div className="container flex h-16 items-center justify-between">
+            <div className="container flex h-14 items-center justify-between">
               <Link href="/" className="group">
                 <Logo className="transition-transform hover:scale-105 inline-block" />
               </Link>
@@ -35,19 +36,17 @@ export default function RootLayout({
                     Sign In
                   </Button>
                 </Link>
+                <MobileNav />
               </div>
             </div>
           </header>
           {children}
-          <footer className="border-t py-6 md:py-0">
-            <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
-              <div className="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
-                <div className="flex items-center gap-2">
-                  <Logo size="small" />
-                  <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-                    Built for athletes, by athletes. © 2025 Driva. All rights reserved.
-                  </p>
-                </div>
+          <footer className="border-t py-4">
+            <div className="container">
+              <div className="flex items-center justify-center md:justify-start">
+                <p className="text-sm text-muted-foreground">
+                  Built for athletes, by athletes. © 2024 Driva. All rights reserved.
+                </p>
               </div>
             </div>
           </footer>
@@ -57,10 +56,3 @@ export default function RootLayout({
   )
 }
 
-
-
-import './globals.css'
-
-export const metadata = {
-  generator: 'v0.dev'
-};

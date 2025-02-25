@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       <main className="flex-1">
-        <section className="space-y-6 py-32 sm:py-40">
+        <section className="space-y-6 py-28 sm:py-32">
           <div className="container">
             <div className="mx-auto flex max-w-[60rem] min-h-[60vh] flex-col items-center gap-6 text-center justify-center">
               <h1 className="text-5xl font-bold sm:text-7xl leading-relaxed">
