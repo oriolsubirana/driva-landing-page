@@ -37,19 +37,19 @@ export default function DownloadPage() {
                 <p className="text-sm text-muted-foreground">Get the full experience on your mobile device</p>
               </div>
             </div>
-            <div className="flex gap-1">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-1">
               <Link href="#" className="flex-1">
                 <img
                   src="/app-store-badge.png"
                   alt="Download on the App Store"
-                  className="h-auto max-w-48"
+                  className="h-auto w-full max-w-[200px]"
                 />
               </Link>
               <Link href="#" className="flex-1">
                 <img
                   src="/play-store-badge.png"
                   alt="Get it on Google Play"
-                  className="h-auto max-w-48"
+                  className="h-auto w-full max-w-[200px]"
                 />
               </Link>
             </div>

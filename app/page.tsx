@@ -38,7 +38,7 @@ export default function Home() {
               </h1>
               <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
                 Join the community that's revolutionizing how athletes connect, compete, and achieve their goals. Manage
-                events, track progress, and build lasting connections.
+                events, track progress, and build lasting connections with AI-powered features.
               </p>
               <div className="flex gap-4">
                 <Link href="/sign-in">
@@ -66,10 +66,10 @@ export default function Home() {
           </div>
 
           <Tabs defaultValue="events" className="mx-auto max-w-4xl">
-            <TabsList className="grid w-full grid-cols-3">
-              <TabsTrigger value="events">Event Management</TabsTrigger>
-              <TabsTrigger value="gamification">Gamification</TabsTrigger>
-              <TabsTrigger value="community">Community</TabsTrigger>
+            <TabsList className="grid w-full grid-cols-1 sm:grid-cols-3 gap-2">
+              <TabsTrigger value="events" className="text-sm sm:text-base">Event Management</TabsTrigger>
+              <TabsTrigger value="gamification" className="text-sm sm:text-base">Gamification</TabsTrigger>
+              <TabsTrigger value="community" className="text-sm sm:text-base">Community</TabsTrigger>
             </TabsList>
             <TabsContent value="events" className="mt-6">
               <div className="grid gap-6 md:grid-cols-2">
@@ -78,7 +78,8 @@ export default function Home() {
                     <Calendar className="h-10 w-10 text-blue-600" />
                     <CardTitle>Smart Event Planning</CardTitle>
                     <CardDescription>
-                      Create and manage events with intelligent route suggestions, pace groups, and weather forecasts.
+                      Create and manage events with AI-powered route suggestions, intelligent pace groups, and
+                      predictive weather forecasts.
                     </CardDescription>
                   </CardHeader>
                 </Card>
@@ -87,7 +88,8 @@ export default function Home() {
                     <Clock className="h-10 w-10 text-blue-600" />
                     <CardTitle>Real-time Tracking</CardTitle>
                     <CardDescription>
-                      Monitor participant progress, pace, and location during events with live updates.
+                      Monitor participant progress with AI-enhanced tracking that provides insights and performance
+                      predictions in real-time.
                     </CardDescription>
                   </CardHeader>
                 </Card>
@@ -127,7 +129,8 @@ export default function Home() {
                     <BarChart className="h-10 w-10 text-blue-600" />
                     <CardTitle>Leaderboards</CardTitle>
                     <CardDescription>
-                      Compete with friends and club members on various performance metrics and challenges.
+                      Compete with friends on AI-analyzed performance metrics that highlight your unique strengths and
+                      improvements.
                     </CardDescription>
                   </CardHeader>
                 </Card>
@@ -136,7 +139,8 @@ export default function Home() {
                     <Target className="h-10 w-10 text-blue-600" />
                     <CardTitle>Weekly Challenges</CardTitle>
                     <CardDescription>
-                      Join exciting weekly challenges with rewards and recognition for top performers.
+                      Join AI-generated challenges tailored to your skill level with rewards and recognition for top
+                      performers.
                     </CardDescription>
                   </CardHeader>
                 </Card>
@@ -176,7 +180,8 @@ export default function Home() {
                     <Heart className="h-10 w-10 text-blue-600" />
                     <CardTitle>Support Network</CardTitle>
                     <CardDescription>
-                      Find training partners, mentors, and supporters within the community.
+                      Find training partners through AI matchmaking that connects you with compatible athletes based on
+                      goals and schedules.
                     </CardDescription>
                   </CardHeader>
                 </Card>
@@ -288,19 +293,19 @@ export default function Home() {
                     <p className="text-sm text-muted-foreground">Get the full experience on your mobile device</p>
                   </div>
                 </div>
-                <div className="flex gap-1">
+                <div className="flex flex-col sm:flex-row gap-4 sm:gap-1">
                   <Link href="#" className="flex-1">
                     <img
                       src="/app-store-badge.png"
                       alt="Download on the App Store"
-                      className="h-auto max-w-48"
+                      className="h-auto w-full max-w-[200px]"
                     />
                   </Link>
                   <Link href="#" className="flex-1">
                     <img
                       src="/play-store-badge.png"
                       alt="Get it on Google Play"
-                      className="h-auto max-w-48"
+                      className="h-auto w-full max-w-[200px]"
                     />
                   </Link>
                 </div>
