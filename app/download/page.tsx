@@ -6,15 +6,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 export default function DownloadPage() {
   return (
     <div className="container py-12 md:py-24">
-      <div className="flex items-center mb-8">
-        <Link href="/">
-          <Button variant="ghost" size="sm" className="gap-1">
-            <ArrowLeft className="h-4 w-4 -translate-y-[1.5px]" />
-            Back to Home
-          </Button>
-        </Link>
-      </div>
-
       <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
         <h1 className="text-4xl font-bold sm:text-5xl">Download Driva</h1>
         <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">

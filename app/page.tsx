@@ -13,7 +13,6 @@ import {
   Share2,
   Heart,
   Star,
-  Download,
   Smartphone,
   CheckCircle2,
 } from "lucide-react"
@@ -21,7 +20,6 @@ import {
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Logo } from "@/components/logo"
 
 export default function Home() {
   return (
@@ -37,13 +35,12 @@ export default function Home() {
                 </span>
               </h1>
               <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-                Join the community that's revolutionizing how athletes connect, compete, and achieve their goals. Manage
-                events, track progress, and build lasting connections with AI-powered features.
+                Join the community that is revolutionizing how athletes connect, compete, and achieve their goals. Manage events effortlessly, track progress, and build thriving communities with AI-powered features.
               </p>
               <div className="flex gap-4">
                 <Link href="/sign-in">
                   <Button size="lg" className="flex items-center gap-2">
-                    Join Now <ArrowRight className="h-4 w-4 -translate-y-[1.5px]" />
+                    Join Now <ArrowRight className="h-4 w-4 -translate-y-[1.8px]" />
                   </Button>
                 </Link>
                 <Link href="/features">

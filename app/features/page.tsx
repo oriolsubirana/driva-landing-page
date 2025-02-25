@@ -20,15 +20,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 export default function FeaturesPage() {
   return (
     <div className="container py-12 md:py-24">
-      <div className="flex items-center mb-8">
-        <Link href="/">
-          <Button variant="ghost" size="sm" className="gap-1">
-            <ArrowLeft className="h-4 w-4 -translate-y-[1.5px]" />
-            Back to Home
-          </Button>
-        </Link>
-      </div>
-
       <div className="mx-auto text-center md:max-w-[58rem]">
         <h1 className="text-4xl font-bold sm:text-5xl">Features</h1>
         <p className="mt-4 text-lg text-muted-foreground">

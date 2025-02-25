@@ -9,14 +9,6 @@ import { Separator } from "@/components/ui/separator"
 export default function SignInPage() {
   return (
     <div className="container py-12 md:py-24">
-      <div className="flex items-center mb-8">
-        <Link href="/">
-          <Button variant="ghost" size="sm" className="gap-1">
-            <ArrowLeft className="h-4 w-4 -mt-0.5" />
-            Back to Home
-          </Button>
-        </Link>
-      </div>
       <div className="container flex flex-col items-center justify-center">
         <Card className="w-[400px]">
           <CardHeader className="space-y-1">
