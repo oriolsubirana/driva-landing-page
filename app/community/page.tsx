@@ -9,7 +9,7 @@ export default function CommunityPage() {
       <div className="flex items-center mb-8">
         <Link href="/">
           <Button variant="ghost" size="sm" className="gap-1">
-            <ArrowLeft className="h-4 w-4 -mt-0.5" />
+            <ArrowLeft className="h-4 w-4 -translate-y-[1.5px]" />
             Back to Home
           </Button>
         </Link>
@@ -28,7 +28,7 @@ export default function CommunityPage() {
             <MessageSquare className="h-8 w-8 text-blue-600" />
             <CardTitle>Club Chat & Forums</CardTitle>
             <CardDescription>
-              Engage in discussions, share tips, and stay connected with your athletic community.
+              Engage in discussions with AI-powered topic suggestions and stay connected with your athletic community.
             </CardDescription>
           </CardHeader>
         </Card>
@@ -51,7 +51,7 @@ export default function CommunityPage() {
             <Users className="h-8 w-8 text-blue-600" />
             <CardTitle>Find Your Tribe</CardTitle>
             <CardDescription>
-              Connect with athletes who share your interests, goals, and training schedule.
+              Our AI matchmaking connects you with athletes who share your interests, goals, and training schedule.
             </CardDescription>
           </CardHeader>
         </Card>
@@ -60,7 +60,8 @@ export default function CommunityPage() {
             <Heart className="h-8 w-8 text-blue-600" />
             <CardTitle>Support & Motivation</CardTitle>
             <CardDescription>
-              Give and receive encouragement from a community that understands your journey.
+              Get personalized motivation from our AI coach alongside encouragement from a community that understands
+              your journey.
             </CardDescription>
           </CardHeader>
         </Card>

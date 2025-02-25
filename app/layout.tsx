@@ -45,7 +45,7 @@ export default function RootLayout({
             <div className="container">
               <div className="flex items-center justify-center md:justify-start">
                 <p className="text-sm text-muted-foreground">
-                  Built for athletes, by athletes. © 2024 Driva. All rights reserved.
+                  Built for athletes, by athletes. © {new Date().getFullYear()} Driva. All rights reserved.
                 </p>
               </div>
             </div>

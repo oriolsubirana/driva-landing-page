@@ -9,7 +9,7 @@ export default function DownloadPage() {
       <div className="flex items-center mb-8">
         <Link href="/">
           <Button variant="ghost" size="sm" className="gap-1">
-            <ArrowLeft className="h-4 w-4 -mt-0.5" />
+            <ArrowLeft className="h-4 w-4 -translate-y-[1.5px]" />
             Back to Home
           </Button>
         </Link>

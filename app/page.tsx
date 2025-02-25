@@ -43,7 +43,7 @@ export default function Home() {
               <div className="flex gap-4">
                 <Link href="/sign-in">
                   <Button size="lg" className="flex items-center gap-2">
-                    Join Now <ArrowRight className="h-4 w-4 -mt-0.5" />
+                    Join Now <ArrowRight className="h-4 w-4 -translate-y-[1.5px]" />
                   </Button>
                 </Link>
                 <Link href="/features">
